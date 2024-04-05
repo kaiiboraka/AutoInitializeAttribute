@@ -1,5 +1,5 @@
 # AutoInitialize.cs
-### A helpful Unity Utility script that automagically gets components for serialized attributes. 
+### A helpful Unity Utility script that automagically gets components for serialized properties. 
 
 This utility script was created by kaiiboraka and code_addict under a CC0 license.
 Free to use and modify and extend to your hearts' content.

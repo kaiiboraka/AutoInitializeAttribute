@@ -12,7 +12,7 @@ Tooltips are shown if you mouse over the label seen in the inspector.
 
 **NOTE:** This feature only works on serializable attributes, so a given variable with this attribute needs to either be `public` or `[SerializeField] private`.
 
-### **FAQ**
+## **FAQ**
 
 **Q: What are the advantages to using this over functionality that I'm used to?**
 

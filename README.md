@@ -17,7 +17,9 @@ Tooltips are shown if you mouse over the label seen in the inspector.
 **Q: What are the advantages to using this over functionality that I'm used to?**
 
 Cool Thing #1: save you some keystrokes, who doesn't love that? Oftentimes with code you'll end up with many calls to `GetComponent<T>` throughout a project, so this should eliminate 90% of those.
+
 Cool Thing #2: \[AutoInitialize\] runs during the editor's OnGUI, so it'll populate fields before runtime and keep them that way, unlike `GetComponent` calls made in `Awake`.
+
 Cool Thing #3: Set and forget! Even if left in an \[ERROR\] state from an unsuccessful search, the attribute will try to search again every time the Object's inspector changes (such as the addition or removal of components, not when field values are changed), on a domain reload, or simply if you re-select the given GameObject in the hierarchy (click off to a different one and back on). So if the components didn't exist at first when you made the variable with the attribute, but then you create them later in the spot it's expecting, you won't need to remember to go back and fill it in yourself.
 
 **Q: Will this script slow down my editor performance?**
